@@ -1,0 +1,227 @@
+/* ----------------------------------------------- */
+/* Basic Setup*/
+/* ----------------------------------------------- */
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #000000;
+    font-family: 'Dosis';
+    font-weight: 400;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+}
+
+/* ----------------------------------------------- */
+/* Reusable Components */
+/* ----------------------------------------------- */
+
+.row {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Links */
+
+a:link,
+a:visited {
+    color: #797271;
+    text-decoration: none;
+    padding-bottom: 1px;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid #797271;
+}
+
+/* Paragraphs */
+
+.section-categories p:nth-child(1) {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 150%;
+    word-spacing: 4px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.section-categories p:nth-child(2) {
+    font-size: 100%;
+    font-weight: 300;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Header */
+
+header {
+    box-shadow: 0 5px 5px #e8e9ea;
+}
+
+nav {  
+    display: flex;
+    height: 100px;
+}
+
+.header-image {
+    align-self: center;
+    flex: 0 0 200px;
+    height: 90px;
+}
+
+.logo {
+    height: 100%;
+    width: auto;
+}
+
+nav ul {
+    flex: 1;
+    list-style: none;
+    display: flex;
+}
+
+.links li {
+    margin: 60px 0px 0px 20px;
+}
+
+.links li:first-child {
+    margin-left: 150px;
+}
+
+.cartBox {
+    flex: 0 0 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cartBox ul {
+    align-self: flex-end;
+    margin-top: 5px;
+}
+
+.cartBox ul li {
+    margin-left: 10px;
+}
+
+.cart {
+    display: flex;
+    flex: 0 0 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #edeeef;
+}
+
+.cart img {
+    height: 20px;
+}
+
+.section-products .row {
+    display: flex;
+}
+
+/* Product Categories */
+
+.section-product-categories {
+    background-color: #e9eaeb;
+    flex: 0 0 25%;
+}
+
+.section-product-categories ul {
+    list-style: none;
+}
+
+.section-product-categories ul li {
+    padding: 10px 0px 10px 12px;
+    border-bottom: 1.5px solid #797271;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+/* Product */
+
+.section-all-products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-all-products  .section-product {
+    padding-left: 10px;
+    flex: 0 0 25%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /*border: 1pt solid purple;*/
+    height: 470px;
+    
+}
+
+.section-all-products .section-product-title {
+    font-size: 100%;
+    font-weight: 700;
+    align-self: center;
+    justify-self: center;
+    padding: 20px;
+    /*border: 1pt solid green;*/
+    width: 100%;
+    height: 100px;
+}
+
+.section-all-products .section-product-image {
+    width: 100%;
+   /* border: 1pt solid red;*/
+}
+
+.section-all-products .section-product-image img{
+    width: 100%;
+}
+
+.section-all-products .section-product-details {
+    background-color: #e9eaeb;
+    padding: 10px;
+    font-weight: 400;
+    display: flex;
+    /*border: 1pt solid orange;*/
+    height: 100px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    overflow: hidden;
+}
+
+.section-all-products .section-product-cost {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    /*border: 1pt solid orange;*/
+    justify-content: space-between;
+    border-bottom: 1.5pt dotted #797271;
+}
+
+/* Buttons */
+
+.section-product-cost button{
+    background-color: #cc0052;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    cursor: pointer;
+    flex: 0 0 50%;
+}

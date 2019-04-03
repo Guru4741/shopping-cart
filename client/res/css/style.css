@@ -1,0 +1,279 @@
+/* ----------------------------------------------- */
+/* Basic Setup*/
+/* ----------------------------------------------- */
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #000000;
+    font-family: 'Dosis';
+    font-weight: 400;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+}
+
+/* ----------------------------------------------- */
+/* Reusable Components */
+/* ----------------------------------------------- */
+
+.row {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Links */
+
+a:link,
+a:visited {
+    color: #797271;
+    text-decoration: none;
+    padding-bottom: 1px;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid #797271;
+}
+
+/* Paragraphs */
+
+.section-categories p:nth-child(1) {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 150%;
+    word-spacing: 4px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.section-categories p:nth-child(2) {
+    font-size: 100%;
+    font-weight: 300;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Header */
+
+header {
+    box-shadow: 0 5px 5px #e8e9ea;
+}
+
+nav {  
+    display: flex;
+    height: 100px;
+}
+
+/*
+figure {
+    align-self: center;
+    flex: 0 0 200px;
+    height: 90px;
+}
+*/
+
+.logo {
+    height: 100%;
+    width: auto;
+}
+
+nav ul {
+    flex-grow: 1;
+    list-style: none;
+    display: flex;
+}
+
+.links li {
+    margin: 60px 0px 0px 20px;
+}
+
+.links li:first-child {
+    margin-left: 150px;
+}
+
+.cartBox {
+    flex: 0 0 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cartBox ul {
+    align-self: flex-end;
+    margin-top: 5px;
+}
+
+.cartBox ul li {
+    margin-left: 10px;
+}
+
+.cart {
+    display: flex;
+    flex: 0 0 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #edeeef;
+}
+
+.cart img {
+    height: 20px;
+}
+
+/* Offers */
+
+.section-offers,
+.section-categories{
+    height: 250px;
+    margin: 20px 0px;
+}
+
+.section-offers figure  {
+    height: 250px;
+    width: 100%;
+}
+
+.offers {
+    margin-top: 1%;
+    height: 90%;
+    width: 100%;
+}
+
+/* Categories */
+
+.section-categories div {
+    display: flex;
+    height: 100%;
+}
+
+.section-categories .categories {
+    flex: 0 0 30%;
+    height: 100%;
+    display: flex;
+    /*border: 1pt solid;*/
+}
+
+.section-categories .categories__explore {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*border: 1pt solid rebeccapurple;*/
+}
+
+.categories img {
+    max-height: 100%;
+    margin: auto;
+    /*border: 1pt solid green;*/
+}
+
+/* Buttons */
+
+.categories__explore button{
+    background-color: #cc0052;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    background-color: #e9eaeb;
+    padding: 15px;
+    margin-top: -20px;
+}        
+    
+/* The shadow CSS class element */
+.section-categories,
+.section-offers {
+    position:relative;
+  }
+  
+  /* The CSS peseudo element that achieves the shadow effect */
+  .section-categories:after,
+  .section-offers::after {
+    content:'';
+    display:block;
+    position:absolute;
+    bottom:-1rem;
+    /* The main idea with this technique is to use a radial gradient to simulate the 
+    desired effect */
+    background:radial-gradient(farthest-corner at 50% 0px, grey 0%, transparent 50%);
+    width:100%;
+    height:1rem;
+    
+  }
+
+
+  /* Mobile Nav */
+
+  .fa{
+      display: none;
+  }
+
+  /* Modal Box */
+
+  .section-modal-box {
+      border: 1pt solid black;
+      height: 700px;
+      width: 30%;
+      margin-left: 35%;
+      display: none;
+      flex-direction: column;
+  }
+
+  .modal-cart-header {
+      background-color: #000000;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      flex: 0 0 50px;
+      align-items: center;
+      padding: 20px;
+      font-weight: 700;
+  }
+
+  .modal-cart-header p:nth-child(2) {
+      cursor: pointer;
+  }
+
+  .modal-cart-items {
+      justify-self: center;
+      align-self: center;
+      flex: 1 ;
+  }
+
+  .modal-cart-items p:nth-child(1){
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .modal-cart-start-shopping {
+    
+    background-color: #cc0052;
+    margin: 0px 10px;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+}

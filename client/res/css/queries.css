@@ -1,0 +1,163 @@
+/* Big tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {    
+   footer {
+       text-align: center;
+   }
+}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    .row {
+        width: 90%;
+    }
+
+    .categories img {
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .section-all-products .section-product {
+        flex: 0 0 50%;
+        height: 300px;
+        border-bottom: 1pt dotted #e9eaeb;
+    }
+
+    .section-all-products .section-product-title {
+        font-size: 120%;
+       /* border: 1pt solid green;*/
+        height: 80px;
+    }
+
+    .section-all-products .section-product-info {
+        display: flex;
+    }
+
+        
+    .section-all-products .section-product-details {
+       /* border: 1pt solid orange;*/
+        height: 140px;
+        overflow: hidden;
+    }
+
+    .section-all-products .section-product-info * {
+        flex: 0 0 50%;
+    }
+
+    .section-product-rate {
+        display: none;
+    }
+
+    .section-all-products .section-product-cost {
+        border-bottom: none;
+    }
+
+    .section-product-cost button{
+        flex: 0 0 100%;
+    }
+ 
+    footer {
+        text-align: center;
+    }
+}
+
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+
+    nav {
+        justify-content: space-around;
+    }
+
+    nav figure {
+        display: flex;
+    }
+
+    .logo {
+        max-height: 80%;
+        align-self: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .cartBox {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cart {
+        display: flex;
+        align-items: center;
+    }
+    
+    .cart img {
+        height: 20px;
+    }
+
+    .section-all-products .section-product {
+        flex: 0 0 100%;
+        /*border: 1pt solid red;*/
+        height: 15%;
+    }
+
+    .section-all-products .section-product-title {
+        font-size: 120%;
+       /* border: 1pt solid green;*/
+        height: 80px;
+    }
+
+    .section-all-products .section-product-info {
+        display: flex;
+    }
+
+        
+    .section-all-products .section-product-details {
+       /* border: 1pt solid orange;*/
+        height: 140px;
+        overflow: hidden;
+    }
+
+    .section-all-products .section-product-info * {
+        flex: 0 0 50%;
+    }
+
+    .section-product-rate {
+        display: none;
+    }
+
+    .section-all-products .section-product-cost {
+        border-bottom: none;
+    }
+
+    .section-product-cost button{
+        flex: 0 0 100%;
+    }
+ 
+    footer {
+        text-align: center;
+    }
+}
+
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+
+}
+
+
+/*
+
+    
+    .section-all-products .section-product-details {
+        /*border: 1pt solid orange;
+        height: 140px;
+        overflow: hidden;
+    }
+
+
+*/
