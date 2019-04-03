@@ -234,7 +234,7 @@ footer {
       height: 700px;
       width: 30%;
       margin-left: 35%;
-      display: flex;
+      display: none;
       flex-direction: column;
   }
 
