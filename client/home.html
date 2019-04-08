@@ -35,21 +35,38 @@
                     </div>
 
                 </div>
+                <!-- Simulate a smartphone / tablet -->
+
+
+                <!-- Top Navigation Menu -->
+                <div class="topnav">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+
+                <!-- End smartphone / tablet look -->
+
+
             </nav>
         </div>
     </header>
+
+    <section class="mobile-menu">
+        <div class="row">
+            <div id="myLinks">
+                <a href="#">Register</a>
+                <a href="#">Sign In</a>
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+            </div>
+        </div>
+    </section>
+
     <section class="section-offers">
         <div class="row">
-            <!--
-            <figure>
-                <img src="res/img/offers/offer5.jpg" alt="Offers" class="offers">
-            </figure>
-        -->
-
-            <!-- Slideshow container -->
             <div class="slideshow-container">
 
-                <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
                     <figure>
                         <img src="res/img/offers/offer1.jpg" class="offers">
@@ -178,5 +195,15 @@
 </body>
 
 <script src="./res/js/slider.js"></script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
 
 </html>

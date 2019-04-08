@@ -141,6 +141,11 @@
     footer {
         text-align: center;
     }
+
+    .topnav {
+        display: flex;
+        justify-content: center;
+      }
 }
 
 

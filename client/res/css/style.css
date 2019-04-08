@@ -221,12 +221,6 @@ footer {
   }
 
 
-  /* Mobile Nav */
-
-  .fa{
-      display: none;
-  }
-
   /* Modal Box */
 
   .section-modal-box {
@@ -356,3 +350,56 @@ footer {
   from {opacity: .4} 
   to {opacity: 1}
 }   
+
+/* Mobile Navigation Menu */
+
+  .topnav {
+    overflow: hidden;
+    position: relative;
+    display: none;
+    margin-left: 10px;
+  }
+  
+  .mobile-menu #myLinks {
+    display: none;
+    margin-top: 10px;
+  }
+  
+.mobile-menu #myLinks a{
+    display: block;
+    padding: 10px;
+    border: none;
+}
+
+.mobile-menu #myLinks a:hover{
+    color: #000000;
+    background-color: #edeeef;
+}
+
+
+  .topnav a {
+    color: #000000;
+    padding: 30px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+
+    display: flex;
+    font-size: 40px;
+    color: #333
+    /*
+    position: absolute;
+    right: 0;
+    top: 0;
+    */
+  }
+  
+  .topnav a:hover {
+    background-color:#edeeef;
+    color: black;
+    border: none;
+  }
+  
