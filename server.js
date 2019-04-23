@@ -15,8 +15,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.set('view engine', 'hbs');
 app.engine('hbs', hbs({
     extname: 'hbs',
-    //defaultView: 'default',
-    //layoutsDir: __dirname + '/views/pages/',
     partialsDir: __dirname + '/views/partials/'
 }));
 
