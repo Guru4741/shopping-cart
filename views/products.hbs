@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="vendors/css/normalizes.css">
+    <link rel="stylesheet" href="res/css/products.css">
+    <link rel="stylesheet" href="res/css/queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,600,700" rel="stylesheet">
+    <title>SABKA BAZAAR</title>
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <nav>
+                <figure>
+                    <img src="res/img/logo.png" alt="logo" class="logo">
+                </figure>
+                <ul class="links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/products">Products</a></li>
+                </ul>
+                <div class="cartBox">
+                    <ul class="cartBox__links">
+                        <li><a href="/signIn">Sign In</a></li>
+                        <li><a href="/signUp">Register</a></li>
+                    </ul>
+                    <div class="cart" onclick="showModalBox()">
+                        <img src="res/img/cart.svg" alt="cart">
+                        <p class="cart__items">0 items</p>
+                    </div>
+
+                </div>
+                <!-- Simulate a smartphone / tablet -->
+
+
+                <!-- Top Navigation Menu -->
+
+                <div class="topnav">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+
+                <!-- End smartphone / tablet look -->
+
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="mobile-menu">
+        <div class="row">
+            <div id="myLinks">
+                <a href="#">Register</a>
+                <a href="#">Sign In</a>
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-products">
+        <div class="row">
+            <div class="section-product-categories">
+                <ul>
+                    {{#each categories}}
+                    <li><a href="/products?categoryID={{this.id}}">{{this.name}}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class=" section-all-products">
+                {{#each products}}
+                <div class="section-product">
+                    <p class="section-product-title">
+                        {{this.name}}
+                    </p>
+                    <div class="section-product-info">
+                        <figure class="section-product-image">
+                            <img src="{{this.imageURL}}" alt="{{this.name}}">
+                        </figure>
+                        <p class="section-product-details">
+                            {{this.description}}
+                        </p>
+                    </div>
+                    <div class="section-product-cost">
+                        <p class="section-product-rate">
+                            MRP Rs.{{this.price}}
+                        </p>
+                        <br>
+                        <form action="/cartValue" method="POST">
+                            <button class="BuyBtn">Buy Now</button>
+                        </form>
+                    </div>
+                </div>
+
+                {{/each}}
+            </div>
+        </div>
+    </section>
+
+    <section class="section-modal-box">
+        <div class="modal-cart-header">
+            <p>My Cart</p>
+            <p onclick="closeModalBox()">X</p>
+        </div>
+        <div class="modal-cart-items">
+
+        </div>
+
+        <button class="modal-cart-start-shopping">Start Shopping</button>
+    </section>
+
+
+    {{> footer}}
+
+</body>
+<script src="./res/js/cart.js"></script>
+
+<script>
+    let btns = document.getElementsByClassName('BuyBtn');
+
+    [].forEach.call(btns, each => {
+
+        each.addEventListener('click', (e) => {
+            e.preventDefault()
+            console.log(e)
+        })
+    })
+</script>
+
+</html>

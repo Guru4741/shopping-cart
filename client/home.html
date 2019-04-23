@@ -29,7 +29,7 @@
                         <li><a href="login.html">Sign In</a></li>
                         <li><a href="registration.html">Register</a></li>
                     </ul>
-                    <div class="cart">
+                    <div class="cart" onclick="showModalBox()">
                         <img src="res/img/cart.svg" alt="cart">
                         <p class="cart__items">0 items</p>
                     </div>
@@ -180,7 +180,7 @@
     <section class="section-modal-box">
         <div class="modal-cart-header">
             <p>My Cart</p>
-            <p>X</p>
+            <p onclick="closeModalBox()">X</p>
         </div>
         <div class="modal-cart-items">
             <p>No items in your cart</p>
@@ -204,6 +204,15 @@
             x.style.display = "block";
         }
     }
+
+    function closeModalBox() {
+        document.querySelector('.section-modal-box').style.display = 'none';
+    }
+
+    function showModalBox() {
+        document.querySelector('.section-modal-box').style.display = 'block';
+    }
+
 </script>
 
 </html>

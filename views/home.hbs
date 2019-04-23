@@ -1,0 +1,67 @@
+{{> header}}
+
+
+
+<section class="section-offers">
+    <div class="row">
+        <div class="slideshow-container">
+            {{#each banners}}
+            <div class="mySlides fade">
+                <figure>
+                    <img src="{{this.bannerImageUrl}}" class="offers">
+                </figure>
+            </div>
+            {{/each}}
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+    </div>
+</section>
+
+{{#each categories}}
+<section class="section-categories section-fruits">
+    <div class="row">
+        <figure class="categories">
+            <img src="{{this.imageUrl}}" alt="Offers" class="categoris__fruits">
+        </figure>
+        <div class="categories__explore">
+            <p>{{this.name}}</p>
+            <p>{{this.description}}</p>
+            <a href="/products?categoryID={{this.id}}" class="categoriesLink">Explore {{this.name}}</a>
+        </div>
+    </div>
+</section>
+
+{{/each}}
+
+<section class="section-modal-box">
+    <div class="modal-cart-header">
+        <p>My Cart</p>
+        <p onclick="closeModalBox()">X</p>
+    </div>
+    <div class="modal-cart-items">
+        <p>No items in your cart</p>
+        <p>Your favorite items are just a click way</p>
+    </div>
+    <button class="modal-cart-start-shopping">Start Shopping</button>
+</section>
+
+{{> footer}}
+</body>
+
+<script src="./res/js/slider.js"></script>
+<script src="./res/js/home.js"></script>
+
+</html>

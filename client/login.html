@@ -28,14 +28,40 @@
                         <li><a href="login.html">Sign In</a></li>
                         <li><a href="registration.html">Register</a></li>
                     </ul>
-                    <div class="cart">
+                    <div class="cart" onclick="showModalBox()">
                         <img src="res/img/cart.svg" alt="cart">
                         <p class="cart__items">0 items</p>
                     </div>
+
                 </div>
+                <!-- Simulate a smartphone / tablet -->
+
+
+                <!-- Top Navigation Menu -->
+                <div class="topnav">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+
+                <!-- End smartphone / tablet look -->
+
+
             </nav>
         </div>
     </header>
+
+    <section class="mobile-menu">
+        <div class="row">
+            <div id="myLinks">
+                <a href="#">Register</a>
+                <a href="#">Sign In</a>
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+            </div>
+        </div>
+    </section>
+
     <section class="section-login">
         <div class="row">
             <div class="login-text">
@@ -57,5 +83,15 @@
         <p>Copyright &copy; 2011-2019 Sabka Bazaar Grocery Supplies Pvt. Ltd.</p>
     </footer>
 </body>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }</script>
 
 </html>

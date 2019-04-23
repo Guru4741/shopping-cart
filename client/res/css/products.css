@@ -121,6 +121,7 @@ nav ul {
     align-items: center;
     justify-content: center;
     background-color: #edeeef;
+    cursor: pointer;
 }
 
 .cart img {
@@ -225,3 +226,179 @@ nav ul {
     cursor: pointer;
     flex: 0 0 50%;
 }
+
+  /* Modal Box */
+
+  .section-modal-box {
+    border: 1pt solid black;
+    height: 700px;
+    width: 50%;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 99999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #dddddd;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.modal-cart-header {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 50px;
+    align-items: center;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.modal-cart-header p:nth-child(2) {
+    cursor: pointer;
+}
+
+.modal-cart-items {
+    justify-self: center;
+    align-self: center;
+    flex: 1 ;
+    overflow: scroll;
+    height: 600px;
+}
+
+.modal-cart-items p:nth-child(1){
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.modal-cart-start-shopping {
+  
+  background-color: #cc0052;
+  margin: 0px 10px;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-cart-not-empty {
+    background-color: #fff;
+    color: #000000;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.modal-cart-not-empty figure{
+    flex: 0 0 20%;
+}
+
+.modal-cart-not-empty figure img {
+    width: 100%;
+}
+
+.modal-cart-items-details {
+    flex: 0 0 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal-cart-item-name p {
+    font-size: 140%;
+    font-weight: 700;
+    letter-spacing: 1px; 
+}
+
+.modal-cart-item-quantity {
+    font-size: 120%;
+}
+
+.modal-cart-item-quantity button {
+    background-color: #cc0052;
+    border: none;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding-bottom: 30px;
+}
+
+.modal-cart-item-quantity form * {
+    margin: 2px 5px;
+}
+
+.modal-cart-item-price {
+    font-size: 100%;
+    align-self: center;
+}
+
+/* Mobile Navigation Menu */
+
+.topnav {
+    overflow: hidden;
+    position: relative;
+    display: none;
+    margin-left: 10px;
+  }
+  
+  .mobile-menu {
+      display: none;
+  }
+
+  .mobile-menu #myLinks {
+    display: none;
+    margin-top: 10px;
+  }
+  
+.mobile-menu #myLinks a{
+    display: block;
+    padding: 10px;
+    border: none;
+}
+
+.mobile-menu #myLinks a:hover{
+    color: #000000;
+    background-color: #edeeef;
+}
+
+
+  .topnav a {
+    color: #000000;
+    padding: 30px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+
+    display: flex;
+    font-size: 40px;
+    color: #333
+    /*
+    position: absolute;
+    right: 0;
+    top: 0;
+    */
+  }
+  
+  .topnav a:hover {
+    background-color:#edeeef;
+    color: black;
+    border: none;
+  }
+  

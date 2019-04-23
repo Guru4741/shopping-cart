@@ -123,6 +123,7 @@ nav ul {
     align-items: center;
     justify-content: center;
     background-color: #edeeef;
+    cursor: pointer;
 }
 
 .cart img {
@@ -227,10 +228,19 @@ footer {
       border: 1pt solid black;
       height: 700px;
       width: 30%;
-      margin-left: 35%;
       display: none;
       flex-direction: column;
-  }
+      position: absolute;
+      z-index: 99999;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-color: #fff;
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+}
 
   .modal-cart-header {
       background-color: #000000;
@@ -360,6 +370,10 @@ footer {
     margin-left: 10px;
   }
   
+  .mobile-menu {
+      display: none;
+  }
+
   .mobile-menu #myLinks {
     display: none;
     margin-top: 10px;

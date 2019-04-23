@@ -1,0 +1,188 @@
+/* ----------------------------------------------- */
+/* Basic Setup*/
+/* ----------------------------------------------- */
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #000000;
+    font-family: 'Dosis';
+    font-weight: 400;
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+}
+
+/* ----------------------------------------------- */
+/* Reusable Components */
+/* ----------------------------------------------- */
+
+.row {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Links */
+
+a:link,
+a:visited {
+    color: #797271;
+    text-decoration: none;
+    padding-bottom: 1px;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid #797271;
+}
+
+/* Header */
+
+header {
+    box-shadow: 0 5px 5px #e8e9ea;
+}
+
+nav {  
+    display: flex;
+    height: 100px;
+}
+
+figure {
+    align-self: center;
+    flex: 0 0 200px;
+    height: 90px;
+}
+
+.logo {
+    height: 100%;
+    width: auto;
+}
+
+nav ul {
+    flex: 1;
+    list-style: none;
+    display: flex;
+}
+
+.links li {
+    margin: 60px 0px 0px 20px;
+}
+
+.links li:first-child {
+    margin-left: 150px;
+}
+
+.cartBox {
+    flex: 0 0 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cartBox ul {
+    align-self: flex-end;
+    margin-top: 5px;
+}
+
+.cartBox ul li {
+    margin-left: 10px;
+}
+
+.cart {
+    display: flex;
+    flex: 0 0 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #edeeef;
+}
+
+.cart img {
+    height: 20px;
+}
+
+/* Buttons */
+
+input[type="submit"] {
+    background-color: #cc0052;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    cursor: pointer;
+}
+
+/* Signup */
+
+.section-signup .row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.signup-text {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-text p {
+    margin-left: 160px;
+}
+
+.signup-text p:nth-child(1) {
+    font-size: 180%;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.signup-form {
+    flex: 0 0 30%;
+}
+
+.signup-form form {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 60%;
+}
+
+.signup-form .signup-text-labels {
+    margin-bottom: 0px;
+    color: #999999;
+    font-size: 90%;
+}
+
+.signup-form .signup-text-box {
+    border: none;
+    border-bottom: 2px solid #999999; 
+    color: #999999;
+    margin-bottom: 30px;
+}
+
+.signup-form .signup-text-box:focus {
+    outline: none;
+    border-bottom: 2px solid #61cfd7;
+}
+
+.signup-form input[type=submit] {
+    color: #fff;
+}
+
+/* Footer */
+
+footer {
+    background-color: #e9eaeb;
+    padding: 15px;
+}        
+  
